@@ -109,6 +109,43 @@
         }
       },
       {
+        "HashCode": 770046621,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.Basement",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Basement"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.Basement",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Common.TypeNameIdentifier": "Basement"
+        }
+      },
+      {
+        "HashCode": -1112117706,
+        "Kind": "Components.Component",
+        "Name": "BlazorApp.Pages.Basement",
+        "AssemblyName": "BlazorApp",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "BlazorApp.Pages.Basement"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "BlazorApp.Pages.Basement",
+          "Common.TypeNamespace": "BlazorApp.Pages",
+          "Common.TypeNameIdentifier": "Basement",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 190258419,
         "Kind": "Components.Component",
         "Name": "BlazorApp.Pages.Fibonacci",
@@ -179,43 +216,6 @@
           "Common.TypeName": "BlazorApp.Pages.Index",
           "Common.TypeNamespace": "BlazorApp.Pages",
           "Common.TypeNameIdentifier": "Index",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": 770046621,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Basement",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "Basement"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.Basement",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Common.TypeNameIdentifier": "Basement"
-        }
-      },
-      {
-        "HashCode": -1112117706,
-        "Kind": "Components.Component",
-        "Name": "BlazorApp.Pages.Basement",
-        "AssemblyName": "BlazorApp",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "BlazorApp.Pages.Basement"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "BlazorApp.Pages.Basement",
-          "Common.TypeNamespace": "BlazorApp.Pages",
-          "Common.TypeNameIdentifier": "Basement",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
