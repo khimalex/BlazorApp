@@ -1,0 +1,56 @@
+@page "/basement"
+@using BlazorApp.Data
+@inject BasementService BasementService
+@inject HttpClient HttpClient
+
+<PageTitle>Basement</PageTitle>
+
+<h1>Basement statistics: @statisticAmount</h1>
+<h1>Basement statistics: @statisticWeight</h1>
+
+<label for="name">Amount of apples:</label>
+
+<InputNumber @bind-Value="amount" />
+
+<p></p>
+
+<label for="name">Variety</label>
+
+<InputSelect @bind-Value="variety" >
+        <option value="Гала">Гала</option>
+        <option value="Голден">Голден</option>
+</InputSelect>
+
+<p></p>
+
+<button class="btn btn-primary" @onclick="AddBucket">Add bucket</button>
+
+@code {
+    private int statisticAmount;
+    private double statisticWeight;
+
+    private int amount;
+    private string variety;
+
+    private async Task AddBucket()
+    {
+        var weightModel = await HttpClient.GetFromJsonAsync<WeightModel>("https://mock.justanother.app/weight");
+
+        BasementService.Add(new Bucket
+        {
+                Weight = weightModel.Weight,
+                Amount = amount,
+                Variety = variety,
+        });
+
+        var statistic = BasementService.GetResult();
+
+        statisticAmount = statistic.AppleAmount;
+        statisticWeight = statistic.Weight;
+    }
+
+    class WeightModel
+    {
+        public double Weight { get; set; }
+    }
+}

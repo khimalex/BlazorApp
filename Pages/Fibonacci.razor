@@ -1,0 +1,19 @@
+﻿@page "/fibonacci"
+
+<PageTitle>Fibonacci</PageTitle>
+
+<h1>Fibonacci</h1>
+
+<p role="status">Current fibonacci number: @currentFib</p>
+
+<button class="btn btn-primary" @onclick="IncrementFib">Click me</button>
+
+@code {
+    private int currentFib = 0;
+    private int nextFib = 1;
+
+    private void IncrementFib()
+    {
+        (currentFib, nextFib) = (nextFib, currentFib + nextFib);
+    }
+}

@@ -1,0 +1,66 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/dt/src/BlazorApp/BlazorApp.csproj": {}
+  },
+  "projects": {
+    "/Users/dt/src/BlazorApp/BlazorApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/dt/src/BlazorApp/BlazorApp.csproj",
+        "projectName": "BlazorApp",
+        "projectPath": "/Users/dt/src/BlazorApp/BlazorApp.csproj",
+        "packagesPath": "/Users/dt/.nuget/packages/",
+        "outputPath": "/Users/dt/src/BlazorApp/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/dt/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "/Users/dt/.local/share/NuGet/tmp": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nexus.niaepnn.ru/repository/nuget-hosted/": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.100/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
