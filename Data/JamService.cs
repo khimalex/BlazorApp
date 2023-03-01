@@ -1,20 +1,27 @@
-namespace BlazorApp.Data;
+using BlazorApp.Data;
 
-class JamService
+public class JamService
 {
-    private readonly List<Variety> _varieties = new()
+    public double GetJamVolume(Bucket[] buckets, Variety variety = null)
     {
-        new(){ Name = "Гала", JamMultiplier = 0.7m },
-        new(){ Name = "Голден", JamMultiplier = 0.5m }
-    };
+        Func<Bucket, bool> condition = variety == null
+        ? b => true
+        : b => b.Variety == variety.Name;
 
-    public Variety GetByName(string varietyName)
+        Func<Bucket, double> sum = variety == null
+        ? b => b.Weight
+        : b => b.Weight * variety.JamMultiplier;
+
+        var result = buckets.Where(condition).Sum(sum);
+
+        return result;
+    }
+
+    public int GetJarsCounts(double volume)
     {
-        if (string.IsNullOrWhiteSpace(varietyName))
-            throw new Exception("Не задан сорт яблок");
+        var full = volume / 1;
+        var left = volume % 1;
 
-        var result = _varieties.FirstOrDefault(v => v.Name.Equals(varietyName));
-
-        return result ?? throw new Exception($"Не найден сорт яблок: {varietyName}");
+        return (int)(full + left);
     }
 }
